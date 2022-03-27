@@ -14,7 +14,7 @@
 
 <?php
 
-include_once'helpers.php';
+include_once 'helpers.php';
 
   if(isset($_GET['page'])){
     if(file_exists("pages/{$_GET['page']}.php")){
@@ -25,7 +25,7 @@ include_once'helpers.php';
 
   }
 }else{
-    include 'index.php';
+    include 'albums.php';
   }
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 function getAlbums(){
-   $albums =  glob('albums/*');
+   $album =  glob('albums/*');
 
-   return $albums;
+   return $album;
 }
