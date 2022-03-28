@@ -5,3 +5,9 @@ function getAlbums(){
 
    return $album;
 }
+
+
+function getMusics($album){
+   $musics= glob("albums/{$album}/musics/*.ogg");
+   return $musics;
+}

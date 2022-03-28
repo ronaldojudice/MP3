@@ -1,5 +1,7 @@
 .img-album{
   max-width: 100%;
+  height: 80px;
+  width: 80px;
 }
 .album{
   margin-top:10px;

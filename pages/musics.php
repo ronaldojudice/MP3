@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Musics</title>
-</head>
-<body>
-aqui ficam as musicas
-</body>
-</html>
+<a href="?page=albums">Voltar para os albums</a>
+<?php
+
+$album = $_GET["album"];
+$musics = getMusics($album);
+
+foreach($musics as $music):
+$caminhoMusica = explode('/', $music);
+$nomeMusica=$caminhoMusica[3];
+$nomeMusicaCerto = explode('.', $nomeMusica);
+$nomeMusicaCerto2 = $nomeMusicaCerto[0];
+
+
+
+
+?>
+
+<h1>Musicas do album <?=$album?></h1>
+<hr>
+<div class="col-12">
+ <h5><?=$nomeMusicaCerto2?></h5> 
+<audio src="=<?$music?>"controls></audio>
+</div>
+
+
+<hr>
+<?php
+endforeach;
+?>

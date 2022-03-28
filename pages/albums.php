@@ -1,7 +1,8 @@
 
   <h1>Albums</h1>
 
-
+<a class="btn btn-success" href="?page=new_album">Novo album</a>
+<hr>
  <div class="row">
  <?php
 
@@ -19,9 +20,9 @@
   
   ?>
    <div class="col-3 album">
-     <a href="#">
+     <a href="?page=musics&album=<?=$nameAlbum?>">
    <img src="<?=$imgAlbum ?>" class="img-album">
-     <h5><?=$nameAlbum ?></h5>
+     <h5><?=$nameAlbum?></h5>
      </a>
    </div>
 
